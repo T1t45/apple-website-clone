@@ -36,6 +36,7 @@ nav ul {
 nav li {
   padding-left: 8px;
   padding-right: 8px;
+  cursor: pointer;
 }
 
 .small-apple-logo,
