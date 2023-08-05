@@ -3,17 +3,24 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-body, h1, h2, h3, p, ul, li {
+@font-face {
+  font-family: "SF Pro Display", sans-serif;
+  src: url("https://fonts.cdnfonts.com/css/sf-pro-display");
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;;
-}
-
 nav {
+  font-family: "San Francisco", Arial, Helvetica, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +28,7 @@ nav {
   z-index: 100;
   display: flex;
   align-items: center;
-  background-color: rgba(251, 251, 253, 0.9);
+  background-color: rgba(240, 240, 240, 0.9);
   height: 44px;
 }
 
@@ -56,11 +63,104 @@ nav li {
   font-size: 13px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.8);
-  font-family: "San Francisco", Arial, Helvetica, sans-serif;
 }
 
 main {
   padding-top: 44px;
+  width: 100%;
 }
 
-footer {}
+.macbook-container {
+  background-color: rgba(251, 251, 253, 0.9);
+  padding-top: 53px;
+  cursor: pointer;
+}
+
+.macbook-title,
+.macbook-subtitle,
+.cta-link {
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.macbook-title {
+  color: #1d1d1f;
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.macbook-subtitle {
+  color: rgb(29, 29, 31);
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.cta-links-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cta-link {
+  color: rgb(0, 102, 204);
+  font-size: 21px;
+  text-underline-offset: 2px;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+
+.left-cta-link {
+  margin-right: 28px;
+}
+
+.macbook-lower-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.macbook-picture {
+  width: 579px;
+}
+
+footer {
+}
+
+@media screen and (max-width: 1068px) {
+  .macbook-title {
+    font-size: 48px;
+  }
+
+  .macbook-subtitle {
+    font-size: 24px;
+  }
+
+  .cta-link {
+    font-size: 19px;
+  }
+
+  .macbook-picture {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .macbook-title {
+    font-size: 32px;
+  }
+
+  .macbook-subtitle {
+    font-size: 19px;
+  }
+
+  .cta-link {
+    font-size: 17px;
+  }
+
+  .macbook-picture {
+    width: 50%;
+  }
+}
