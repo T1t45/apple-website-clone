@@ -66,14 +66,18 @@ nav li {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   padding-top: 44px;
   width: 100%;
 }
 
 .macbook-container {
+  flex: 1;
   background-color: rgba(251, 251, 253, 0.9);
   padding-top: 53px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .macbook-title,
@@ -119,22 +123,61 @@ main {
   align-items: center;
   justify-content: center;
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .macbook-picture {
-  width: 579px;
+  width: 580px;
+  height: 430px;
+}
+
+.pro-container {
+  flex: 1;
+  padding-top: 53px;
+  background-color: rgb(0,0,0);
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.pro-title,
+.pro-subtitle {
+  text-align: center;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.pro-title {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.pro-subtitle {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.pro-lower-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.pro-picture {
+  width: 950px;
 }
 
 footer {
 }
 
 @media screen and (max-width: 1068px) {
-  .macbook-title {
+  .macbook-title,
+  .pro-title {
     font-size: 48px;
   }
 
-  .macbook-subtitle {
+  .macbook-subtitle,
+  .pro-subtitle {
     font-size: 24px;
   }
 
@@ -142,17 +185,20 @@ footer {
     font-size: 19px;
   }
 
-  .macbook-picture {
+  .macbook-picture,
+  .pro-picture {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 734px) {
-  .macbook-title {
+  .macbook-title,
+  .pro-title {
     font-size: 32px;
   }
 
-  .macbook-subtitle {
+  .macbook-subtitle,
+  .pro-subtitle {
     font-size: 19px;
   }
 
@@ -160,7 +206,8 @@ footer {
     font-size: 17px;
   }
 
-  .macbook-picture {
+  .macbook-picture,
+  .pro-picture {
     width: 50%;
   }
 }
