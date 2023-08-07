@@ -1,10 +1,12 @@
+/* Nav-bar and general styles */
+
 @font-face {
-  font-family: "San Francisco";
+  font-family: "San Francisco", Arial;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
 @font-face {
-  font-family: "SF Pro Display", sans-serif;
+  font-family: "SF Pro Display", Arial;
   src: url("https://fonts.cdnfonts.com/css/sf-pro-display");
 }
 
@@ -20,7 +22,7 @@ li {
 }
 
 nav {
-  font-family: "San Francisco", Arial, Helvetica, sans-serif;
+  font-family: "San Francisco", Arial;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,13 +52,6 @@ nav li {
   cursor: pointer;
 }
 
-/*.macbook-picture,
-.pro-picture,
-.college-picture {
-  width: 930px;
-  height: 430px;
-}*/
-
 .small-apple-logo,
 .search-icon {
   width: 15px;
@@ -79,38 +74,7 @@ main {
   width: 100%;
 }
 
-.macbook-container {
-  flex: 1;
-  background-color: rgba(251, 251, 253, 0.9);
-  padding-top: 53px;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
-
-.macbook-title,
-.macbook-subtitle,
-.pro-title,
-.pro-subtitle,
-.college-title,
-.college-subtitle,
-.cta-link {
-  text-align: center;
-  font-family: "SF Pro Display", sans-serif;
-}
-
-.macbook-title,
-.college-title {
-  color: #1d1d1f;
-  font-weight: 600;
-  font-size: 56px;
-}
-
-.macbook-subtitle,
-.college-subtitle {
-  color: rgb(29, 29, 31);
-  font-weight: 100;
-  font-size: 28px;
-}
+/* All products styles */
 
 .cta-links-container {
   margin-top: 10px;
@@ -118,9 +82,11 @@ main {
 }
 
 .cta-link {
-  color: rgb(0, 102, 204);
+  color: #2997ff;
   font-size: 21px;
   text-underline-offset: 2px;
+  text-align: center;
+  font-family: "San Francisco", Arial;
 }
 
 .cta-link:hover {
@@ -131,80 +97,174 @@ main {
   margin-right: 28px;
 }
 
-.macbook-lower-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
-}
+/* First product styles */
 
-.pro-container {
+.first-product-container {
   flex: 1;
-  padding-top: 53px;
-  background-color: rgb(0,0,0);
   cursor: pointer;
   margin-bottom: 15px;
+  position: relative;
 }
 
-.pro-title {
+.first-product-container-upper {
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.first-product-title,
+.first-product-subtitle {
+  text-align: center;
+  font-family: "San Francisco", Arial;
+}
+
+.first-product-title {
+  margin-top: 47px;
   color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 56px;
 }
 
-.pro-subtitle {
+.first-product-subtitle {
   color: rgb(255, 255, 255);
   font-weight: 100;
   font-size: 28px;
 }
 
-.pro-lower-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
+.first-product-image-container {
+  background-image: url("images/first-product/first-product.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 690px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
 }
 
-.college-container {
+/* Second product styles */
+
+.second-product-title,
+.second-product-subtitle {
+  text-align: center;
+  font-family: "San Francisco", Arial;
+}
+
+.second-product-container {
   flex: 1;
-  background-color: rgba(251, 251, 253, 0.9);
-  padding-top: 53px;
   cursor: pointer;
   margin-bottom: 15px;
+  position: relative;
 }
 
-.college-upper-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.second-product-container-upper {
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.college-lower-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -10px;
+.second-product-title {
+  margin-top: 47px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 56px;
 }
 
-.college-title {
+.second-product-subtitle {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.second-product-image-container {
+  background-image: url("images/second-product/second-product.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 690px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+
+/* Third product styles */
+
+.third-product-title,
+.third-product-subtitle {
+  text-align: center;
+  font-family: "San Francisco", Arial;
+}
+
+.third-product-title {
+  margin-top: 47px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 56px;
   max-width: 490px;
   letter-spacing: -3px;
+}
+
+.third-product-subtitle {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.third-product-container {
+  flex: 1;
+  cursor: pointer;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.third-product-container-upper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.third-product-image-container {
+  background-image: url("images/third-product/third-product.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 690px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
 }
 
 footer {
 }
 
+/* Media queries */
+
 @media screen and (max-width: 1068px) {
-  .macbook-title,
-  .pro-title,
-  .college-title {
+  .first-product-title,
+  .second-product-title,
+  .third-product-title {
     font-size: 48px;
   }
 
-  .macbook-subtitle,
-  .pro-subtitle,
-  .college-subtitle {
+  .first-product-subtitle,
+  .second-product-subtitle,
+  .third-product-subtitle {
     font-size: 24px;
   }
 
@@ -212,23 +272,23 @@ footer {
     font-size: 19px;
   }
 
-  .macbook-picture,
-  .pro-picture,
-  .college-picture {
-    width: 70%;
+  .first-product-image-container,
+  .second-product-image-container,
+  .third-product-image-container {
+    /* width: 70%;*/
   }
 }
 
 @media screen and (max-width: 734px) {
-  .macbook-title,
-  .pro-title,
-  .college-title {
+  .first-product-title,
+  .second-product-title,
+  .third-product-title {
     font-size: 32px;
   }
 
-  .macbook-subtitle,
-  .pro-subtitle,
-  .college-subtitle {
+  .first-product-subtitle,
+  .second-product-subtitle,
+  .third-product-subtitle {
     font-size: 19px;
   }
 
@@ -236,9 +296,9 @@ footer {
     font-size: 17px;
   }
 
-  .macbook-picture,
-  .pro-picture,
-  .college-picture {
-    width: 50%;
+  .first-product-image-container,
+  .second-product-image-container,
+  .third-product-image-container {
+    /*  width: 50%; */
   }
 }
