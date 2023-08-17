@@ -636,6 +636,10 @@ footer {
   flex-wrap: nowrap;
 }
 
+.footer-5-columns-nav-column {
+  flex-basis: 25%;
+}
+
 #footer-5-columns-nav-column-section-top-padding {
   padding-top: 24px;
 }
